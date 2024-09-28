@@ -1,0 +1,93 @@
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(177, 167, 169);
+}
+
+footer {
+    background-color: #504a4b;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+.navbar {
+    background-color: #504A4B;
+    padding: 1.4rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul-navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.ul-navbar li {
+    margin-right: 20px;
+}
+
+.ul-navbar li a {
+    text-decoration: none;
+    color: #dacccc;
+    font-size: 2rem;
+    padding: 10px 15px;
+    display: block;
+}
+
+.ul-navbar li a:hover {
+    color: white;
+}
+
+.split {
+    text-decoration: none;
+    color: #dacccc;
+    font-size: 75px;
+    margin: 7px;
+    padding: 30px;
+}
+.container {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 20vh; 
+}
+
+.judul {
+    font-size: 75px;
+    color: #21272b;
+}   
+.imagetop img {
+    width: 35%;
+    display: block; 
+    margin: 0 auto; 
+    max-width: none; 
+    height: auto; 
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    
+}
+    .content {
+        font-size: 16px;
+        color: #504a4b;
+        margin: 5rem;
+}
+
+footer .social {
+    padding: 1rem 0;
+}
+footer .social a {
+    color: #dacccc;
+    margin: 1rem;
+}
+footer .credit {
+    color: #dacccc;
+    font-size: 24px;
+}

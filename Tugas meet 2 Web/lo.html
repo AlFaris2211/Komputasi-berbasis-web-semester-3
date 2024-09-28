@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Perhitungan JavaScript</title>
+</head>
+<body>
+
+<h2>Menghitung Luas Persegi Panjang</h2>
+
+<!-- Input untuk panjang dan lebar -->
+Panjang: <input type="number" id="length" placeholder="Masukkan panjang"><br><br>
+Lebar: <input type="number" id="width" placeholder="Masukkan lebar"><br><br>
+
+<!-- Tombol untuk memicu perhitungan -->
+<button onclick="calculateArea()">Hitung Luas</button>
+
+<!-- Tempat untuk menampilkan hasil -->
+<p id="result"></p>
+
+<script>
+// Fungsi untuk menghitung luas persegi panjang
+function calculateArea() {
+    // Mengambil nilai panjang dan lebar dari input
+    var length = document.getElementById("length").value;
+    var width = document.getElementById("width").value;
+
+    // Menghitung luas
+    var area = length * width;
+
+    // Menampilkan hasil di dalam elemen <p>
+ 
+        document.getElementById("result").innerHTML = "Luas Persegi Panjang: " + area;
+        console.log("Hello, World!");
+}
+</script>
+
+    
+
+</body>
+</html>
