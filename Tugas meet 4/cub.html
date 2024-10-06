@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2 class="text-center mb-4">Kontak Kami</h2>
+            <form action="cub.php" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Jenis Kelamin</label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="Laki-Laki" required>
+                            <label class="form-check-label" for="male">Laki-Laki</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="Perempuan">
+                            <label class="form-check-label" for="female">Perempuan</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="birthdate" class="form-label">Tanggal Lahir</label>
+                    <input type="date" class="form-control" id="birthdate" name="birthdate" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Hobby</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Coding" id="coding" name="hobby[]">
+                        <label class="form-check-label" for="coding">Tidur</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Bermain Basket" id="basketball" name="hobby[]">
+                        <label class="form-check-label" for="basketball">Sepak bola</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Bermain Game" id="gaming" name="hobby[]">
+                        <label class="form-check-label" for="gaming">bermain gitar</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 mb-2">Submit</button>
+                <button type="reset" class="btn btn-danger w-100">Reset</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
